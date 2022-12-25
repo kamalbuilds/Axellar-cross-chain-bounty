@@ -125,4 +125,22 @@ Axellar Scan https://testnet.axelarscan.io/gmp/0x0f737af42caf0cb23934b694d8ba54d
     ![Screenshot_20221219_105534](https://user-images.githubusercontent.com/95926324/209458660-329a9f3f-ab41-40f0-a255-b978b3fe842a.png)
 
 
+5.  Finally, after local testing , the contract was deployed and tested on testnet.
+
+    -    `node scripts/deploy.js examples/call-contract-with-token testnet` to deploy **DistributionExecutable** contract on local node.
+    
+    -   `node scripts/test examples/call-contract-with-token testnet "Avalanche" "Polygon" 2 0x6426f98F4728Fb8D2D8904c55983Be4c3132be6D,0xCF8D2Da12A032b3f3EaDC686AB18551D8fD6c132 "Kamal here, sending you 1 aUSDC token each"` to transfer 2 aUSDC to `two different accounts` from `Avalanche` to `Polygon` . Amount will be divided equally among recipients.
+
+
+    ![Screenshot_20221214_083723](https://user-images.githubusercontent.com/95926324/209458753-368cd87b-9c15-4f85-a55a-adf29188e21d.png)
+    
+ 6. Problems faced
+ 
+ i> The contract was earlier not getting executed in the testnet due to insuffiecient balance. So I had to fund all my wallets for the transaction to execute.
+ j> There was some problem going on with Axellar internal errors , so It took 11 days for my transaction to complete. 
+![Screenshot_20221214_101500](https://user-images.githubusercontent.com/95926324/209458797-28ba576d-2d24-4325-b6c1-3ac1d7be6c1e.png)
+
+But, I am happy that it finally got completed.
+
+![image](https://user-images.githubusercontent.com/95926324/209458921-b2aa678c-f86e-49a5-8acc-1a447da6cbfd.png)
 
